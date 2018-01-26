@@ -207,32 +207,42 @@ while True:
         print(dealerX)
 
 #The following loop will execute until the dealer's turn is done
-        while True:
-                if dealer > 21:
-                        Comparison(player1, 0)
-                        break
-                elif dealer > 16:
-                        Wait()
-                        print("\nThe dealer stays...\n")
-                        Wait()
-                        print("\nThis is the dealer's final score\n")
-                        print(dealer)
-                        Comparison(player1, dealer)
-                        break
-                else:
-                        Wait()
-                        print("\nThe dealer hits...\n")
-                        dealerZ = cards[0]
-                        cards.remove(dealerZ)
-                        Wait()
-                        print("\nThe dealer drew the following card\n")
-                        print(dealerZ)
-                        dealer = DrawCard(dealer, dealerZ)
+        if dealer == 21:
+                print("\nThe dealer has blackjack!\n")
+                Comparison(player1, dealer)
+        else:
+                while True:
+                        if dealer > 21:
+                                Comparison(player1, 0)
+                                break
+                        elif dealer > 16:
+                                Wait()
+                                print("\nThe dealer stays...\n")
+                                Wait()
+                                print("\nThis is the dealer's final score\n")
+                                print(dealer)
+                                Comparison(player1, dealer)
+                                break
+                        else:
+                                Wait()
+                                print("\nThe dealer hits...\n")
+                                dealerZ = cards[0]
+                                cards.remove(dealerZ)
+                                Wait()
+                                print("\nThe dealer drew the following card\n")
+                                print(dealerZ)
+                                dealer = DrawCard(dealer, dealerZ)
+                                continue
+        while True:        
+                print("\nWould you like to play again?\n")
+                again = str(input("\nType \'yes\' or \'no\'\n"))
+                if again != "yes" and again != "no":
+                        print("\nInvalid input!\n")
                         continue
-                
-        print("\nWould you like to play again?\n")
-        again = str(input("\nType \'yes\' or \'no\'\n"))
-        if again == "yes":
+                else:
+                        break
+
+        if again == "yes" :
                 for i in range(50):
                         print()
         else:
