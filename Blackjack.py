@@ -207,9 +207,10 @@ while True:
         print(dealerX)
 
 #The following loop will execute until the dealer's turn is done
-        if dealer == 21:
+        if (dealerX == 'ace' or dealerY == 'ace') and dealer == 11:
+                Wait()
                 print("\nThe dealer has blackjack!\n")
-                Comparison(player1, dealer)
+                Comparison(player1, 21)
         else:
                 while True:
                         if dealer > 21:
