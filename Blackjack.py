@@ -10,11 +10,6 @@ Date started: 1/17/2018
 Description:    This program is a single player Blackjack game where
                 you play against a dealer.
 
-Purpose:        I created this project after I taught myself some Python. The best
-                way to get better at coding in a language is doing projects
-                that I find interesting. This project was not school related
-                at all.
-
 Comments:       I have a few ideas for changes to this program in the future
                 concerning topics such as a point system, A.I., and multiplayer
                 features.
