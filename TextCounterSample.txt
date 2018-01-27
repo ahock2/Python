@@ -1,0 +1,20 @@
+This is a test to count how many words, lines, sentences, and paragraphs are contained in this program.
+If this test does what it is supposed to do, that would be absolutely jazzy.
+
+Why did I spend time creating a program such as this one you ask? Good question!
+
+I want to get better at Python, a language I taught myself. I thought this would be a 
+neat project to work on. It was supposed to only do word counts, but it does much more.
+
+
+That's my favorite part of programming by far. Your program can always be better.
+I haven't really learned how to make my programs more efficient, but I know
+how to make a simple word counter into one that counts words, sentences, paragraphs, and 
+lines!
+
+
+
+
+I put a lot of crazy stuff in here, but here are the numbers I'm looking for.
+
+This program should have 159 words, 20 lines, 6 paragraphs, and 12 sentences.
