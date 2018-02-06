@@ -20,6 +20,10 @@ Comments:       This program only took me a couple of hours on a Saturday to wri
                 this program can give accurate data (For example, this program inaccurately
                 lists the number of sentences in your program if the last line of your
                 program is blank)
+                
+                Warning! This sentence counter part of the code does not take initials into consideration
+                (example: "The book was written by A. J. Hock." will count as 3 sentences in the sentence counter
+                if there is a space preceding the period. "The book was written by A.J. Hock" will count as 2 sentences.
         
         
 """
